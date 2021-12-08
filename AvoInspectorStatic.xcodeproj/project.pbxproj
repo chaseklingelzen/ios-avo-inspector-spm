@@ -7,9 +7,54 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		6EA1EE3F2760E2C000FD3D29 /* AvoInspectorStatic.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EA1EE3E2760E2C000FD3D29 /* AvoInspectorStatic.m */; };
-		6EA1EE402760E2C000FD3D29 /* AvoInspectorStatic.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 6EA1EE3D2760E2C000FD3D29 /* AvoInspectorStatic.h */; };
+		6E7E50322760F4EB00CAFB96 /* Expecta.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E7E50312760F4EB00CAFB96 /* Expecta.xcframework */; };
+		6E7E50432760F5EC00CAFB96 /* ListSchemaExtractionTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E7E50332760F5EC00CAFB96 /* ListSchemaExtractionTests.m */; };
+		6E7E50442760F5EC00CAFB96 /* InitializationTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E7E50342760F5EC00CAFB96 /* InitializationTests.m */; };
+		6E7E50452760F5EC00CAFB96 /* VisualDebuggerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E7E50352760F5EC00CAFB96 /* VisualDebuggerTests.m */; };
+		6E7E50462760F5EC00CAFB96 /* TrackTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E7E50362760F5EC00CAFB96 /* TrackTests.m */; };
+		6E7E50472760F5EC00CAFB96 /* SessionTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E7E50372760F5EC00CAFB96 /* SessionTests.m */; };
+		6E7E50482760F5EC00CAFB96 /* InstallationIdTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E7E50382760F5EC00CAFB96 /* InstallationIdTests.m */; };
+		6E7E50492760F5EC00CAFB96 /* DeduplicatorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E7E50392760F5EC00CAFB96 /* DeduplicatorTests.m */; };
+		6E7E504A2760F5EC00CAFB96 /* Tests-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6E7E503A2760F5EC00CAFB96 /* Tests-Info.plist */; };
+		6E7E504B2760F5EC00CAFB96 /* SamplingTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E7E503B2760F5EC00CAFB96 /* SamplingTests.m */; };
+		6E7E504C2760F5EC00CAFB96 /* EnvironmentMappingTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E7E503C2760F5EC00CAFB96 /* EnvironmentMappingTest.m */; };
+		6E7E504D2760F5EC00CAFB96 /* LogsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E7E503D2760F5EC00CAFB96 /* LogsTests.m */; };
+		6E7E504E2760F5EC00CAFB96 /* SimpleTypeSchemaExtractionTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E7E503E2760F5EC00CAFB96 /* SimpleTypeSchemaExtractionTests.m */; };
+		6E7E504F2760F5EC00CAFB96 /* SessionBetweenRestartsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E7E503F2760F5EC00CAFB96 /* SessionBetweenRestartsTests.m */; };
+		6E7E50502760F5EC00CAFB96 /* DictionarySchemaExtractionTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E7E50402760F5EC00CAFB96 /* DictionarySchemaExtractionTests.m */; };
+		6E7E50512760F5EC00CAFB96 /* NetworkCallsHandlerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E7E50412760F5EC00CAFB96 /* NetworkCallsHandlerTests.m */; };
+		6E7E507A27611C4D00CAFB96 /* AvoInt.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E7E505827611C4C00CAFB96 /* AvoInt.m */; };
+		6E7E507B27611C4D00CAFB96 /* AvoBoolean.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E7E505D27611C4C00CAFB96 /* AvoBoolean.m */; };
+		6E7E507C27611C4D00CAFB96 /* AvoObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E7E505E27611C4C00CAFB96 /* AvoObject.m */; };
+		6E7E507D27611C4D00CAFB96 /* AvoNetworkCallsHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E7E506227611C4C00CAFB96 /* AvoNetworkCallsHandler.m */; };
+		6E7E507E27611C4D00CAFB96 /* AvoSchemaExtractor.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E7E506327611C4C00CAFB96 /* AvoSchemaExtractor.m */; };
+		6E7E507F27611C4D00CAFB96 /* AvoFloat.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E7E506427611C4C00CAFB96 /* AvoFloat.m */; };
+		6E7E508027611C4D00CAFB96 /* AvoDeduplicator.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E7E506527611C4D00CAFB96 /* AvoDeduplicator.m */; };
+		6E7E508127611C4D00CAFB96 /* AvoString.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E7E506727611C4D00CAFB96 /* AvoString.m */; };
+		6E7E508227611C4D00CAFB96 /* AvoNull.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E7E506B27611C4D00CAFB96 /* AvoNull.m */; };
+		6E7E508327611C4D00CAFB96 /* AvoInstallationId.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E7E506C27611C4D00CAFB96 /* AvoInstallationId.m */; };
+		6E7E508427611C4D00CAFB96 /* AvoInspector.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E7E506D27611C4D00CAFB96 /* AvoInspector.m */; };
+		6E7E508527611C4D00CAFB96 /* AvoUnknownType.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E7E506F27611C4D00CAFB96 /* AvoUnknownType.m */; };
+		6E7E508627611C4D00CAFB96 /* AvoSessionTracker.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E7E507127611C4D00CAFB96 /* AvoSessionTracker.m */; };
+		6E7E508727611C4D00CAFB96 /* AvoList.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E7E507227611C4D00CAFB96 /* AvoList.m */; };
+		6E7E508827611C4D00CAFB96 /* AvoBatcher.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E7E507327611C4D00CAFB96 /* AvoBatcher.m */; };
+		6E7E508927611C4D00CAFB96 /* AvoEventSchemaType.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E7E507627611C4D00CAFB96 /* AvoEventSchemaType.m */; };
+		6E7E508A27611C4D00CAFB96 /* AvoUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E7E507927611C4D00CAFB96 /* AvoUtils.m */; };
+		6EA1EE682760E4AF00FD3D29 /* libAvoInspectorStatic.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6EA1EE3A2760E2C000FD3D29 /* libAvoInspectorStatic.a */; };
+		6EA1EEAE2760ECBD00FD3D29 /* BatchingTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EA1EEAD2760ECBD00FD3D29 /* BatchingTests.m */; };
+		6EA1EEB32760F37500FD3D29 /* Specta.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6EA1EEB12760F37500FD3D29 /* Specta.xcframework */; };
+		6EA1EEB42760F37500FD3D29 /* OCMock.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6EA1EEB22760F37500FD3D29 /* OCMock.xcframework */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		6EA1EE692760E4AF00FD3D29 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6EA1EE322760E2C000FD3D29 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6EA1EE392760E2C000FD3D29;
+			remoteInfo = AvoInspectorStatic;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		6EA1EE382760E2C000FD3D29 /* CopyFiles */ = {
@@ -18,16 +63,70 @@
 			dstPath = "include/$(PRODUCT_NAME)";
 			dstSubfolderSpec = 16;
 			files = (
-				6EA1EE402760E2C000FD3D29 /* AvoInspectorStatic.h in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		6E7E50312760F4EB00CAFB96 /* Expecta.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = Expecta.xcframework; path = Carthage/Build/Expecta.xcframework; sourceTree = "<group>"; };
+		6E7E50332760F5EC00CAFB96 /* ListSchemaExtractionTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ListSchemaExtractionTests.m; sourceTree = "<group>"; };
+		6E7E50342760F5EC00CAFB96 /* InitializationTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InitializationTests.m; sourceTree = "<group>"; };
+		6E7E50352760F5EC00CAFB96 /* VisualDebuggerTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VisualDebuggerTests.m; sourceTree = "<group>"; };
+		6E7E50362760F5EC00CAFB96 /* TrackTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TrackTests.m; sourceTree = "<group>"; };
+		6E7E50372760F5EC00CAFB96 /* SessionTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SessionTests.m; sourceTree = "<group>"; };
+		6E7E50382760F5EC00CAFB96 /* InstallationIdTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InstallationIdTests.m; sourceTree = "<group>"; };
+		6E7E50392760F5EC00CAFB96 /* DeduplicatorTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DeduplicatorTests.m; sourceTree = "<group>"; };
+		6E7E503A2760F5EC00CAFB96 /* Tests-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Tests-Info.plist"; sourceTree = "<group>"; };
+		6E7E503B2760F5EC00CAFB96 /* SamplingTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SamplingTests.m; sourceTree = "<group>"; };
+		6E7E503C2760F5EC00CAFB96 /* EnvironmentMappingTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EnvironmentMappingTest.m; sourceTree = "<group>"; };
+		6E7E503D2760F5EC00CAFB96 /* LogsTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LogsTests.m; sourceTree = "<group>"; };
+		6E7E503E2760F5EC00CAFB96 /* SimpleTypeSchemaExtractionTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SimpleTypeSchemaExtractionTests.m; sourceTree = "<group>"; };
+		6E7E503F2760F5EC00CAFB96 /* SessionBetweenRestartsTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SessionBetweenRestartsTests.m; sourceTree = "<group>"; };
+		6E7E50402760F5EC00CAFB96 /* DictionarySchemaExtractionTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DictionarySchemaExtractionTests.m; sourceTree = "<group>"; };
+		6E7E50412760F5EC00CAFB96 /* NetworkCallsHandlerTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NetworkCallsHandlerTests.m; sourceTree = "<group>"; };
+		6E7E50422760F5EC00CAFB96 /* Tests-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Tests-Prefix.pch"; sourceTree = "<group>"; };
+		6E7E50522761126800CAFB96 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		6E7E505727611C4C00CAFB96 /* AvoInstallationId.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AvoInstallationId.h; path = Sources/AvoInspectorStatic/AvoInstallationId.h; sourceTree = "<group>"; };
+		6E7E505827611C4C00CAFB96 /* AvoInt.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AvoInt.m; path = Sources/AvoInspectorStatic/AvoInt.m; sourceTree = "<group>"; };
+		6E7E505927611C4C00CAFB96 /* Inspector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Inspector.h; path = Sources/AvoInspectorStatic/Inspector.h; sourceTree = "<group>"; };
+		6E7E505A27611C4C00CAFB96 /* AvoSchemaExtractor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AvoSchemaExtractor.h; path = Sources/AvoInspectorStatic/AvoSchemaExtractor.h; sourceTree = "<group>"; };
+		6E7E505B27611C4C00CAFB96 /* AvoBoolean.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AvoBoolean.h; path = Sources/AvoInspectorStatic/AvoBoolean.h; sourceTree = "<group>"; };
+		6E7E505C27611C4C00CAFB96 /* AvoDeduplicator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AvoDeduplicator.h; path = Sources/AvoInspectorStatic/AvoDeduplicator.h; sourceTree = "<group>"; };
+		6E7E505D27611C4C00CAFB96 /* AvoBoolean.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AvoBoolean.m; path = Sources/AvoInspectorStatic/AvoBoolean.m; sourceTree = "<group>"; };
+		6E7E505E27611C4C00CAFB96 /* AvoObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AvoObject.m; path = Sources/AvoInspectorStatic/AvoObject.m; sourceTree = "<group>"; };
+		6E7E505F27611C4C00CAFB96 /* AvoList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AvoList.h; path = Sources/AvoInspectorStatic/AvoList.h; sourceTree = "<group>"; };
+		6E7E506027611C4C00CAFB96 /* AvoNull.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AvoNull.h; path = Sources/AvoInspectorStatic/AvoNull.h; sourceTree = "<group>"; };
+		6E7E506127611C4C00CAFB96 /* AvoInt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AvoInt.h; path = Sources/AvoInspectorStatic/AvoInt.h; sourceTree = "<group>"; };
+		6E7E506227611C4C00CAFB96 /* AvoNetworkCallsHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AvoNetworkCallsHandler.m; path = Sources/AvoInspectorStatic/AvoNetworkCallsHandler.m; sourceTree = "<group>"; };
+		6E7E506327611C4C00CAFB96 /* AvoSchemaExtractor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AvoSchemaExtractor.m; path = Sources/AvoInspectorStatic/AvoSchemaExtractor.m; sourceTree = "<group>"; };
+		6E7E506427611C4C00CAFB96 /* AvoFloat.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AvoFloat.m; path = Sources/AvoInspectorStatic/AvoFloat.m; sourceTree = "<group>"; };
+		6E7E506527611C4D00CAFB96 /* AvoDeduplicator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AvoDeduplicator.m; path = Sources/AvoInspectorStatic/AvoDeduplicator.m; sourceTree = "<group>"; };
+		6E7E506627611C4D00CAFB96 /* AvoInspector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AvoInspector.h; path = Sources/AvoInspectorStatic/AvoInspector.h; sourceTree = "<group>"; };
+		6E7E506727611C4D00CAFB96 /* AvoString.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AvoString.m; path = Sources/AvoInspectorStatic/AvoString.m; sourceTree = "<group>"; };
+		6E7E506827611C4D00CAFB96 /* AvoNetworkCallsHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AvoNetworkCallsHandler.h; path = Sources/AvoInspectorStatic/AvoNetworkCallsHandler.h; sourceTree = "<group>"; };
+		6E7E506927611C4D00CAFB96 /* AvoUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AvoUtils.h; path = Sources/AvoInspectorStatic/AvoUtils.h; sourceTree = "<group>"; };
+		6E7E506A27611C4D00CAFB96 /* AvoObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AvoObject.h; path = Sources/AvoInspectorStatic/AvoObject.h; sourceTree = "<group>"; };
+		6E7E506B27611C4D00CAFB96 /* AvoNull.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AvoNull.m; path = Sources/AvoInspectorStatic/AvoNull.m; sourceTree = "<group>"; };
+		6E7E506C27611C4D00CAFB96 /* AvoInstallationId.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AvoInstallationId.m; path = Sources/AvoInspectorStatic/AvoInstallationId.m; sourceTree = "<group>"; };
+		6E7E506D27611C4D00CAFB96 /* AvoInspector.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AvoInspector.m; path = Sources/AvoInspectorStatic/AvoInspector.m; sourceTree = "<group>"; };
+		6E7E506E27611C4D00CAFB96 /* AvoSessionTracker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AvoSessionTracker.h; path = Sources/AvoInspectorStatic/AvoSessionTracker.h; sourceTree = "<group>"; };
+		6E7E506F27611C4D00CAFB96 /* AvoUnknownType.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AvoUnknownType.m; path = Sources/AvoInspectorStatic/AvoUnknownType.m; sourceTree = "<group>"; };
+		6E7E507027611C4D00CAFB96 /* AvoEventSchemaType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AvoEventSchemaType.h; path = Sources/AvoInspectorStatic/AvoEventSchemaType.h; sourceTree = "<group>"; };
+		6E7E507127611C4D00CAFB96 /* AvoSessionTracker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AvoSessionTracker.m; path = Sources/AvoInspectorStatic/AvoSessionTracker.m; sourceTree = "<group>"; };
+		6E7E507227611C4D00CAFB96 /* AvoList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AvoList.m; path = Sources/AvoInspectorStatic/AvoList.m; sourceTree = "<group>"; };
+		6E7E507327611C4D00CAFB96 /* AvoBatcher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AvoBatcher.m; path = Sources/AvoInspectorStatic/AvoBatcher.m; sourceTree = "<group>"; };
+		6E7E507427611C4D00CAFB96 /* AvoFloat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AvoFloat.h; path = Sources/AvoInspectorStatic/AvoFloat.h; sourceTree = "<group>"; };
+		6E7E507527611C4D00CAFB96 /* AvoString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AvoString.h; path = Sources/AvoInspectorStatic/AvoString.h; sourceTree = "<group>"; };
+		6E7E507627611C4D00CAFB96 /* AvoEventSchemaType.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AvoEventSchemaType.m; path = Sources/AvoInspectorStatic/AvoEventSchemaType.m; sourceTree = "<group>"; };
+		6E7E507727611C4D00CAFB96 /* AvoUnknownType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AvoUnknownType.h; path = Sources/AvoInspectorStatic/AvoUnknownType.h; sourceTree = "<group>"; };
+		6E7E507827611C4D00CAFB96 /* AvoBatcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AvoBatcher.h; path = Sources/AvoInspectorStatic/AvoBatcher.h; sourceTree = "<group>"; };
+		6E7E507927611C4D00CAFB96 /* AvoUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AvoUtils.m; path = Sources/AvoInspectorStatic/AvoUtils.m; sourceTree = "<group>"; };
 		6EA1EE3A2760E2C000FD3D29 /* libAvoInspectorStatic.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libAvoInspectorStatic.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		6EA1EE3D2760E2C000FD3D29 /* AvoInspectorStatic.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AvoInspectorStatic.h; sourceTree = "<group>"; };
-		6EA1EE3E2760E2C000FD3D29 /* AvoInspectorStatic.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AvoInspectorStatic.m; sourceTree = "<group>"; };
+		6EA1EE642760E4AF00FD3D29 /* Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6EA1EEAD2760ECBD00FD3D29 /* BatchingTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BatchingTests.m; sourceTree = "<group>"; };
+		6EA1EEB12760F37500FD3D29 /* Specta.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = Specta.xcframework; path = Carthage/Build/Specta.xcframework; sourceTree = "<group>"; };
+		6EA1EEB22760F37500FD3D29 /* OCMock.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = OCMock.xcframework; path = Carthage/Build/OCMock.xcframework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,14 +137,61 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		6EA1EE612760E4AF00FD3D29 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6E7E50322760F4EB00CAFB96 /* Expecta.xcframework in Frameworks */,
+				6EA1EEB32760F37500FD3D29 /* Specta.xcframework in Frameworks */,
+				6EA1EE682760E4AF00FD3D29 /* libAvoInspectorStatic.a in Frameworks */,
+				6EA1EEB42760F37500FD3D29 /* OCMock.xcframework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
 		6EA1EE312760E2C000FD3D29 = {
 			isa = PBXGroup;
 			children = (
-				6EA1EE3C2760E2C000FD3D29 /* AvoInspectorStatic */,
+				6E7E507827611C4D00CAFB96 /* AvoBatcher.h */,
+				6E7E507327611C4D00CAFB96 /* AvoBatcher.m */,
+				6E7E505B27611C4C00CAFB96 /* AvoBoolean.h */,
+				6E7E505D27611C4C00CAFB96 /* AvoBoolean.m */,
+				6E7E505C27611C4C00CAFB96 /* AvoDeduplicator.h */,
+				6E7E506527611C4D00CAFB96 /* AvoDeduplicator.m */,
+				6E7E507027611C4D00CAFB96 /* AvoEventSchemaType.h */,
+				6E7E507627611C4D00CAFB96 /* AvoEventSchemaType.m */,
+				6E7E507427611C4D00CAFB96 /* AvoFloat.h */,
+				6E7E506427611C4C00CAFB96 /* AvoFloat.m */,
+				6E7E506627611C4D00CAFB96 /* AvoInspector.h */,
+				6E7E506D27611C4D00CAFB96 /* AvoInspector.m */,
+				6E7E505727611C4C00CAFB96 /* AvoInstallationId.h */,
+				6E7E506C27611C4D00CAFB96 /* AvoInstallationId.m */,
+				6E7E506127611C4C00CAFB96 /* AvoInt.h */,
+				6E7E505827611C4C00CAFB96 /* AvoInt.m */,
+				6E7E505F27611C4C00CAFB96 /* AvoList.h */,
+				6E7E507227611C4D00CAFB96 /* AvoList.m */,
+				6E7E506827611C4D00CAFB96 /* AvoNetworkCallsHandler.h */,
+				6E7E506227611C4C00CAFB96 /* AvoNetworkCallsHandler.m */,
+				6E7E506027611C4C00CAFB96 /* AvoNull.h */,
+				6E7E506B27611C4D00CAFB96 /* AvoNull.m */,
+				6E7E506A27611C4D00CAFB96 /* AvoObject.h */,
+				6E7E505E27611C4C00CAFB96 /* AvoObject.m */,
+				6E7E505A27611C4C00CAFB96 /* AvoSchemaExtractor.h */,
+				6E7E506327611C4C00CAFB96 /* AvoSchemaExtractor.m */,
+				6E7E506E27611C4D00CAFB96 /* AvoSessionTracker.h */,
+				6E7E507127611C4D00CAFB96 /* AvoSessionTracker.m */,
+				6E7E507527611C4D00CAFB96 /* AvoString.h */,
+				6E7E506727611C4D00CAFB96 /* AvoString.m */,
+				6E7E507727611C4D00CAFB96 /* AvoUnknownType.h */,
+				6E7E506F27611C4D00CAFB96 /* AvoUnknownType.m */,
+				6E7E506927611C4D00CAFB96 /* AvoUtils.h */,
+				6E7E507927611C4D00CAFB96 /* AvoUtils.m */,
+				6E7E505927611C4C00CAFB96 /* Inspector.h */,
+				6EA1EE652760E4AF00FD3D29 /* Tests */,
 				6EA1EE3B2760E2C000FD3D29 /* Products */,
+				6EA1EE8F2760E70000FD3D29 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -53,17 +199,44 @@
 			isa = PBXGroup;
 			children = (
 				6EA1EE3A2760E2C000FD3D29 /* libAvoInspectorStatic.a */,
+				6EA1EE642760E4AF00FD3D29 /* Tests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		6EA1EE3C2760E2C000FD3D29 /* AvoInspectorStatic */ = {
+		6EA1EE652760E4AF00FD3D29 /* Tests */ = {
 			isa = PBXGroup;
 			children = (
-				6EA1EE3D2760E2C000FD3D29 /* AvoInspectorStatic.h */,
-				6EA1EE3E2760E2C000FD3D29 /* AvoInspectorStatic.m */,
+				6E7E50522761126800CAFB96 /* Info.plist */,
+				6E7E50392760F5EC00CAFB96 /* DeduplicatorTests.m */,
+				6E7E50402760F5EC00CAFB96 /* DictionarySchemaExtractionTests.m */,
+				6E7E503C2760F5EC00CAFB96 /* EnvironmentMappingTest.m */,
+				6E7E50342760F5EC00CAFB96 /* InitializationTests.m */,
+				6E7E50382760F5EC00CAFB96 /* InstallationIdTests.m */,
+				6E7E50332760F5EC00CAFB96 /* ListSchemaExtractionTests.m */,
+				6E7E503D2760F5EC00CAFB96 /* LogsTests.m */,
+				6E7E50412760F5EC00CAFB96 /* NetworkCallsHandlerTests.m */,
+				6E7E503B2760F5EC00CAFB96 /* SamplingTests.m */,
+				6E7E503F2760F5EC00CAFB96 /* SessionBetweenRestartsTests.m */,
+				6E7E50372760F5EC00CAFB96 /* SessionTests.m */,
+				6E7E503E2760F5EC00CAFB96 /* SimpleTypeSchemaExtractionTests.m */,
+				6E7E503A2760F5EC00CAFB96 /* Tests-Info.plist */,
+				6E7E50422760F5EC00CAFB96 /* Tests-Prefix.pch */,
+				6E7E50362760F5EC00CAFB96 /* TrackTests.m */,
+				6E7E50352760F5EC00CAFB96 /* VisualDebuggerTests.m */,
+				6EA1EEAD2760ECBD00FD3D29 /* BatchingTests.m */,
 			);
-			path = AvoInspectorStatic;
+			path = Tests;
+			sourceTree = "<group>";
+		};
+		6EA1EE8F2760E70000FD3D29 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6EA1EEB22760F37500FD3D29 /* OCMock.xcframework */,
+				6E7E50312760F4EB00CAFB96 /* Expecta.xcframework */,
+				6EA1EEB12760F37500FD3D29 /* Specta.xcframework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -86,6 +259,24 @@
 			productReference = 6EA1EE3A2760E2C000FD3D29 /* libAvoInspectorStatic.a */;
 			productType = "com.apple.product-type.library.static";
 		};
+		6EA1EE632760E4AF00FD3D29 /* Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6EA1EE6B2760E4AF00FD3D29 /* Build configuration list for PBXNativeTarget "Tests" */;
+			buildPhases = (
+				6EA1EE602760E4AF00FD3D29 /* Sources */,
+				6EA1EE612760E4AF00FD3D29 /* Frameworks */,
+				6EA1EE622760E4AF00FD3D29 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6EA1EE6A2760E4AF00FD3D29 /* PBXTargetDependency */,
+			);
+			name = Tests;
+			productName = Tests;
+			productReference = 6EA1EE642760E4AF00FD3D29 /* Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -96,6 +287,9 @@
 				LastUpgradeCheck = 1310;
 				TargetAttributes = {
 					6EA1EE392760E2C000FD3D29 = {
+						CreatedOnToolsVersion = 13.1;
+					};
+					6EA1EE632760E4AF00FD3D29 = {
 						CreatedOnToolsVersion = 13.1;
 					};
 				};
@@ -114,20 +308,78 @@
 			projectRoot = "";
 			targets = (
 				6EA1EE392760E2C000FD3D29 /* AvoInspectorStatic */,
+				6EA1EE632760E4AF00FD3D29 /* Tests */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6EA1EE622760E4AF00FD3D29 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6E7E504A2760F5EC00CAFB96 /* Tests-Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		6EA1EE362760E2C000FD3D29 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6EA1EE3F2760E2C000FD3D29 /* AvoInspectorStatic.m in Sources */,
+				6E7E507D27611C4D00CAFB96 /* AvoNetworkCallsHandler.m in Sources */,
+				6E7E508627611C4D00CAFB96 /* AvoSessionTracker.m in Sources */,
+				6E7E507A27611C4D00CAFB96 /* AvoInt.m in Sources */,
+				6E7E508227611C4D00CAFB96 /* AvoNull.m in Sources */,
+				6E7E508327611C4D00CAFB96 /* AvoInstallationId.m in Sources */,
+				6E7E508027611C4D00CAFB96 /* AvoDeduplicator.m in Sources */,
+				6E7E508427611C4D00CAFB96 /* AvoInspector.m in Sources */,
+				6E7E508127611C4D00CAFB96 /* AvoString.m in Sources */,
+				6E7E507E27611C4D00CAFB96 /* AvoSchemaExtractor.m in Sources */,
+				6E7E508827611C4D00CAFB96 /* AvoBatcher.m in Sources */,
+				6E7E508927611C4D00CAFB96 /* AvoEventSchemaType.m in Sources */,
+				6E7E507F27611C4D00CAFB96 /* AvoFloat.m in Sources */,
+				6E7E508727611C4D00CAFB96 /* AvoList.m in Sources */,
+				6E7E507C27611C4D00CAFB96 /* AvoObject.m in Sources */,
+				6E7E507B27611C4D00CAFB96 /* AvoBoolean.m in Sources */,
+				6E7E508527611C4D00CAFB96 /* AvoUnknownType.m in Sources */,
+				6E7E508A27611C4D00CAFB96 /* AvoUtils.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6EA1EE602760E4AF00FD3D29 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6E7E50472760F5EC00CAFB96 /* SessionTests.m in Sources */,
+				6E7E50452760F5EC00CAFB96 /* VisualDebuggerTests.m in Sources */,
+				6E7E504C2760F5EC00CAFB96 /* EnvironmentMappingTest.m in Sources */,
+				6E7E504F2760F5EC00CAFB96 /* SessionBetweenRestartsTests.m in Sources */,
+				6E7E50482760F5EC00CAFB96 /* InstallationIdTests.m in Sources */,
+				6E7E50462760F5EC00CAFB96 /* TrackTests.m in Sources */,
+				6E7E504D2760F5EC00CAFB96 /* LogsTests.m in Sources */,
+				6EA1EEAE2760ECBD00FD3D29 /* BatchingTests.m in Sources */,
+				6E7E504B2760F5EC00CAFB96 /* SamplingTests.m in Sources */,
+				6E7E50432760F5EC00CAFB96 /* ListSchemaExtractionTests.m in Sources */,
+				6E7E504E2760F5EC00CAFB96 /* SimpleTypeSchemaExtractionTests.m in Sources */,
+				6E7E50492760F5EC00CAFB96 /* DeduplicatorTests.m in Sources */,
+				6E7E50442760F5EC00CAFB96 /* InitializationTests.m in Sources */,
+				6E7E50502760F5EC00CAFB96 /* DictionarySchemaExtractionTests.m in Sources */,
+				6E7E50512760F5EC00CAFB96 /* NetworkCallsHandlerTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6EA1EE6A2760E4AF00FD3D29 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6EA1EE392760E2C000FD3D29 /* AvoInspectorStatic */;
+			targetProxy = 6EA1EE692760E4AF00FD3D29 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		6EA1EE412760E2C000FD3D29 /* Debug */ = {
@@ -266,6 +518,58 @@
 			};
 			name = Release;
 		};
+		6EA1EE6C2760E4AF00FD3D29 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = G7H6Q48U3Z;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Tests/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.2.6;
+				PRODUCT_BUNDLE_IDENTIFIER = app.avo.Tests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		6EA1EE6D2760E4AF00FD3D29 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = G7H6Q48U3Z;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Tests/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.2.6;
+				PRODUCT_BUNDLE_IDENTIFIER = app.avo.Tests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -283,6 +587,15 @@
 			buildConfigurations = (
 				6EA1EE442760E2C000FD3D29 /* Debug */,
 				6EA1EE452760E2C000FD3D29 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6EA1EE6B2760E4AF00FD3D29 /* Build configuration list for PBXNativeTarget "Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6EA1EE6C2760E4AF00FD3D29 /* Debug */,
+				6EA1EE6D2760E4AF00FD3D29 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

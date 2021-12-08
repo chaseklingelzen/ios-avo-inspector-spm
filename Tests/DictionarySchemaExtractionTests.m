@@ -1,0 +1,116 @@
+//
+//  DictionarySchemaExtractionTests.m
+//  AvoStateOfTracking_Tests
+//
+//  Created by Alex Verein on 20.02.2020.
+//  Copyright © 2020 Alexey Verein. All rights reserved.
+//
+
+#import <Specta/Specta.h>
+#import <Expecta/Expecta.h>
+#import <Foundation/Foundation.h>
+#import <OCMock/OCMock.h>
+#import "AvoInspector.h"
+#import "AvoList.h"
+#import "AvoObject.h"
+#import "AvoInt.h"
+#import "AvoFloat.h"
+#import "AvoBoolean.h"
+#import "AvoNull.h"
+#import "AvoString.h"
+
+SpecBegin(DictionaryExtraction)
+
+__block AvoInspector * sut;
+
+beforeAll(^{
+    sut = [[AvoInspector alloc] initWithApiKey:@"api key" env:AvoInspectorEnvDev];
+});
+
+it(@"can extract dictionary", ^{
+    NSMutableDictionary * testParams = [NSMutableDictionary new];
+    
+   NSDictionary * dict = @{@"field0": @"test", @"field1": @42};
+   
+   [testParams setObject:dict forKey:@"dict key"];
+   
+    NSDictionary * extractedSchema = [sut extractSchema:testParams];
+   
+   expect([[extractedSchema objectForKey:@"dict key"] class]).equal([AvoObject class]);
+});
+
+it(@"can extract mutable dictionary", ^{
+   NSMutableDictionary * testParams = [NSMutableDictionary new];
+   
+   NSMutableDictionary * mutableDict = [NSMutableDictionary new];
+   [mutableDict setValue:@"test" forKey:@"field0"];
+   [mutableDict setValue:@42 forKey:@"field1"];
+    
+   [testParams setObject:mutableDict forKey:@"mutable dict key"];
+   
+   NSDictionary * extractedSchema = [sut extractSchema:testParams];
+   
+   expect([[extractedSchema objectForKey:@"mutable dict key"] class]).equal([AvoObject class]);
+});
+
+it(@"can extract single entry dictionary", ^{
+    NSMutableDictionary * testParams = [NSMutableDictionary new];
+    
+    NSDictionary * dict = @{@"field0": @"test"};
+   
+    [testParams setObject:dict forKey:@"dict key"];
+   
+    NSDictionary * extractedSchema = [sut extractSchema:testParams];
+   
+    expect([[extractedSchema objectForKey:@"dict key"] class]).equal([AvoObject class]);
+});
+
+it(@"can extract single entry mutable dictionary", ^{
+   NSMutableDictionary * testParams = [NSMutableDictionary new];
+   
+   NSMutableDictionary * mutableDict = [NSMutableDictionary new];
+   [mutableDict setValue:@"test" forKey:@"field0"];
+    
+   [testParams setObject:mutableDict forKey:@"mutable dict key"];
+   
+   NSDictionary * extractedSchema = [sut extractSchema:testParams];
+   
+   expect([[extractedSchema objectForKey:@"mutable dict key"] class]).equal([AvoObject class]);
+});
+
+it(@"can extract nullable string int float boolean list(string) object{field0:string, filed1:int, filed3:list(null)} subtype array", ^{
+    NSMutableDictionary * testParams = [NSMutableDictionary new];
+   
+    NSMutableDictionary * mutableDict = [NSMutableDictionary new];
+    [mutableDict setValue:@"Hello world" forKey:@"strKey"];
+    [mutableDict setValue:NSNull.null forKey:@"nullStrKey"];
+    [mutableDict setValue:@42 forKey:@"intKey"];
+    [mutableDict setValue:@42.0 forKey:@"floatKey"];
+    [mutableDict setValue:@YES forKey:@"boolKey"];
+    [mutableDict setValue:@[@"test str"] forKey:@"listKey"];
+    [mutableDict setValue:@{@"field0" : @"some string", @"filed1" : @-1, @"filed3" : @[NSNull.null]} forKey:@"nestedObjKey"];
+   
+    [testParams setObject:mutableDict forKey:@"complex object key"];
+   
+    NSDictionary * extractedSchema = [sut extractSchema:testParams];
+   
+    expect([[extractedSchema objectForKey:@"complex object key"] name])
+   .to.equal( @"{\"strKey\":\"string\",\"intKey\":\"int\",\"nullStrKey\":\"null\",\"nestedObjKey\":{\"field0\":\"string\",\"filed1\":\"int\",\"filed3\":\"list(null)\"},\"listKey\":\"list(string)\",\"boolKey\":\"boolean\",\"floatKey\":\"float\"}");
+});
+
+it(@"can extract list with double nested objects", ^{
+    NSMutableDictionary * testParams = [NSMutableDictionary new];
+   
+    NSMutableArray * arrayWithDoubleNestedObj = [NSMutableArray new];
+    [arrayWithDoubleNestedObj addObject:@{@"int": @10}];
+    [arrayWithDoubleNestedObj addObject:@{@"obj": @{@"nested": @{@"nested int":@1, @"nested bool":@YES}}}];
+   
+    [testParams setObject:arrayWithDoubleNestedObj forKey:@"2nested array"];
+   
+    NSDictionary * extractedSchema = [sut extractSchema:testParams];
+   
+    expect([[extractedSchema objectForKey:@"2nested array"] name])
+   .to.equal( @"list({\"int\":\"int\"}|{\"obj\":{\"nested\":{\"nested int\":\"int\",\"nested bool\":\"boolean\"}}})");
+});
+
+SpecEnd
