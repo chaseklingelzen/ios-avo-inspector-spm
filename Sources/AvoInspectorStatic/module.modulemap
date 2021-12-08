@@ -1,4 +1,3 @@
 module AvoInspectorStatic {
     umbrella header "AvoInspectorStatic.h"
-    export *
 }
