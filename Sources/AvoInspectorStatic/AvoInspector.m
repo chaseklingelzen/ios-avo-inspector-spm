@@ -118,7 +118,7 @@ static int batchFlushTime = 30;
 //                                selector:@selector(enterBackground)
 //                                    name:UIApplicationDidEnterBackgroundNotification
 //                                  object:nil];
-//    
+//
 //    [self.notificationCenter addObserver:self
 //                                selector:@selector(enterForeground)
 //                                    name:UIApplicationWillEnterForegroundNotification
