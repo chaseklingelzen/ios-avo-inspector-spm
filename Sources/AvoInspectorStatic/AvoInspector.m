@@ -5,7 +5,6 @@
 //  Created by Alex Verein on 28.01.2020.
 //
 
-#import <UIKit/UIKit.h>
 #import "AvoInspector.h"
 #import "AvoEventSchemaType.h"
 #import "AvoNetworkCallsHandler.h"
@@ -115,15 +114,15 @@ static int batchFlushTime = 30;
 }
 
 - (void) addObservers {
-    [self.notificationCenter addObserver:self
-                                selector:@selector(enterBackground)
-                                    name:UIApplicationDidEnterBackgroundNotification
-                                  object:nil];
-    
-    [self.notificationCenter addObserver:self
-                                selector:@selector(enterForeground)
-                                    name:UIApplicationWillEnterForegroundNotification
-                                  object:nil];
+//    [self.notificationCenter addObserver:self
+//                                selector:@selector(enterBackground)
+//                                    name:UIApplicationDidEnterBackgroundNotification
+//                                  object:nil];
+//    
+//    [self.notificationCenter addObserver:self
+//                                selector:@selector(enterForeground)
+//                                    name:UIApplicationWillEnterForegroundNotification
+//                                  object:nil];
 }
 
 - (void)enterBackground {
