@@ -18,8 +18,7 @@ let package = Package(
     targets: [
         .target(
             name: "AvoInspector",
-            dependencies: [],
-            path: "Sources/AvoInspectorStatic"
+            dependencies: []
         )
     ]
 )

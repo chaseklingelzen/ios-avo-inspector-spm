@@ -13,7 +13,7 @@ This is the Swift Package Manager repo, you can also use Avo Inspector via Cocoa
 
 Obj-C
 ```objectivec
-#import <AvoInspector/AvoInspector.h>
+#import <AvoInspector.h>
 ```
 Swift
 ```swift
