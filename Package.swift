@@ -19,8 +19,7 @@ let package = Package(
         .target(
             name: "AvoInspector",
             dependencies: [],
-            path: "Sources/AvoInspectorStatic",
-            exclude: ["../../Tests", "../../Cartfile.private", "../../Cartfile.resolved"]
+            path: "Sources/AvoInspectorStatic"
         )
     ]
 )
