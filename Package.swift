@@ -4,22 +4,23 @@
 import PackageDescription
 
 let package = Package(
-    name: "AvoInspectorStatic",
+    name: "AvoInspector",
     platforms: [
         .iOS(.v10)
     ],
     products: [
         .library(
-            name: "AvoInspectorStatic",
-            targets: ["AvoInspectorStatic"]),
+            name: "AvoInspector",
+            targets: ["AvoInspector"]),
     ],
     dependencies: [
     ],
     targets: [
         .target(
-            name: "AvoInspectorStatic",
+            name: "AvoInspector",
             dependencies: [],
-            path: "Sources/AvoInspectorStatic"
+            path: "Sources/AvoInspectorStatic",
+            exclude: ["../../Tests", "../../Cartfile", "../../Cartfile.private"]
         )
     ]
 )
