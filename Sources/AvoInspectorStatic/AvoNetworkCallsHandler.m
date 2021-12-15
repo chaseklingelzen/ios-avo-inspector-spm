@@ -9,7 +9,7 @@
 #import "AvoInstallationId.h"
 #import "AvoUtils.h"
 #import "AvoInspector.h"
-#import "AvoObject.h"
+#import "types/AvoObject.h"
 
 @interface AvoNetworkCallsHandler()
 

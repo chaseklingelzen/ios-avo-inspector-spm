@@ -6,7 +6,7 @@
 //
 
 #import "AvoInspector.h"
-#import "AvoEventSchemaType.h"
+#import "types/AvoEventSchemaType.h"
 #import "AvoNetworkCallsHandler.h"
 #import "AvoBatcher.h"
 #import "AvoDeduplicator.h"

@@ -7,7 +7,7 @@
 
 #import <Foundation/Foundation.h>
 #import "Inspector.h"
-#import "AvoSessionTracker.h"
+#import "../AvoSessionTracker.h"
 
 NS_ASSUME_NONNULL_BEGIN
 

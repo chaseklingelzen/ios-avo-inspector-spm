@@ -8,7 +8,7 @@
 #import <Foundation/Foundation.h>
 
 #import "AvoNetworkCallsHandler.h"
-#import "AvoEventSchemaType.h"
+#import "types/AvoEventSchemaType.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
