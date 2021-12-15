@@ -20,7 +20,7 @@ let package = Package(
             name: "AvoInspector",
             dependencies: [],
             path: "Sources/AvoInspectorStatic",
-            exclude: ["../../Tests", "../../Cartfile", "../../Cartfile.private"]
+            exclude: ["../../Tests", "../../Cartfile.private", "../../Cartfile.resolved"]
         )
     ]
 )
