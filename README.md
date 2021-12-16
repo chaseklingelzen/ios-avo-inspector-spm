@@ -7,7 +7,9 @@ For more information about the Inspector project please read [Avo documentation]
 
 # Installation
 
-This is the Swift Package Manager repo, you can also use Avo Inspector via Cocoapods
+This is the Swift Package Manager repo, you can also use Avo Inspector via [Cocoapods](https://github.com/avohq/ios-avo-inspector)
+
+To use this package search for this repo url https://github.com/avohq/ios-avo-inspector-spm in Xcode
 
 # Import
 
