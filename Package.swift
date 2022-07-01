@@ -18,7 +18,10 @@ let package = Package(
     targets: [
         .target(
             name: "AvoInspector",
-            dependencies: []
+            dependencies: [],
+            swiftSettings: [
+                .define("DEBUG", .when(configuration: .debug))
+            ]
         )
     ]
 )
